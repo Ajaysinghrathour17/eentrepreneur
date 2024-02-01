@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import {logo}  from '../../assets/image'
+import ArrowUp from '../Button/ArrowUp';
 
 export default function Footer() {
     return (
@@ -152,6 +153,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+            <ArrowUp />
         </footer>
     );
 }

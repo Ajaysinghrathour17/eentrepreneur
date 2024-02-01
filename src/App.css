@@ -1,4 +1,4 @@
-/* home */
+home
 .hero{
    position: relative;
    height: 100vh;
@@ -20,14 +20,14 @@
     font-size: 6rem;
     font-weight: bold;
 }
-.navbar{
+/* .navbar{
     display: flex;
     flex-direction: row;
 }
 
 .nav_links{
     display: flex;
-}
+} */
 
 .main_img{
     width: 100%;

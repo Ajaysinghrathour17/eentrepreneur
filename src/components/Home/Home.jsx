@@ -5,6 +5,7 @@ import Photo from "../gallery/Photo";
 import "../../App.css";
 import About from "../About/About";
 import Services from "../Services/Services";
+import Vision from "../About/Vision";
 
 export default function Home() {
   const galleryItems = [
@@ -22,21 +23,43 @@ export default function Home() {
   ];
   return (
     <div className="">
-      <div className="hero ">
-        <img src={home} alt="image" className="main_img " />
-        <h3 className="bg-gray-600">
-          It always seems imposible untill it's done
-        </h3>
+      {/* h */}
+      <div className="container mx-auto max-h-screen overflow-hidden">
+      <div className="relative h-[500px]">
+        <img
+          src={home}
+          alt="image"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="bg-black bg-opacity-50  text-white p-6 rounded-[20px] max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl font-bold mb-4">Welcome to Our Website</h2>
+            <h3 className="italic text-3xl lg:text-4xl xl:text-5xl mb-6">
+              "It always seems impossible until it's done"
+            </h3>
+            <p className="text-lg mb-8">
+              Explore and discover the endless possibilities.
+            </p>
+            <button className="bg-white text-black py-2 px-4 rounded-full hover:bg-gray-300 transition duration-300">
+              Get Started
+            </button>
+          </div>
+        </div>
       </div>
+    </div>
+    {/* vision and vission */}
+      {/* <section className="mt-10">
+      <Vision />
+      </section> */}
       {/* services */}
-      <section >
-       <Services />
+      <section>
+        <Services />
       </section>
 
       <secction className="about_section h-screen">
-      <h2 className="text-3xl font-bold mb-6 ml-4 text-gray-800">About us</h2>
+        <h2 className="text-3xl font-bold mb-6 ml-4 text-gray-800">About us</h2>
 
-         <About className="pt-[-100px]" />
+        <About className="pt-[-100px]" />
       </secction>
 
       {/* programs */}
@@ -68,7 +91,7 @@ export default function Home() {
 
       {/* programs */}
 
-      <div className="gallery  w-full">
+      {/* <div className="gallery  w-full">
         <div className="head_text">
           <h3 className="text-center text-4xl font-bold">Photo Gallery</h3>
         </div>
@@ -79,7 +102,7 @@ export default function Home() {
           <img src={asset1} alt="" />
           <img src={asset2} alt="" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
