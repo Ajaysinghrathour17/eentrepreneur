@@ -19,26 +19,19 @@ import im8 from "./im8.jpeg"
 import im9 from "./im9.jpeg"
 import akshat from "./akshat.jpeg"
 import sumit from "./sumit.jpeg"
+import eventV1 from './v1.mp4';
+import eventV2 from './v2.mp4';
+import eventV3 from './v3.mp4';
+import eventV4 from './v4.mp4';
 
 export {
-    logo,
-    asset1,
-    asset2,
-    asset3,
-    home,
-    home1,
-    gallery1,
-gallery2,
-gallery3,
-gallery4,
-im1,
-im2,
-im3,
-im4,
-im5,
-im6,
-im7,
-im8,
-im9, akshat , sumit
+    logo,asset1,asset2,asset3,
+    home,home1,
+    gallery1,gallery2,gallery3,gallery4,
+im1,im2,
+im3,im4,im5,im6,
+im7,im8,
+im9, akshat , sumit,
+eventV1, eventV2, eventV3, eventV4
 
 }

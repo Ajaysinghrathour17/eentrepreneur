@@ -2,48 +2,32 @@ import React from 'react'
 import { home1, logo } from '../../assets/image';
 import { Link } from 'react-router-dom';
 import Vision from './Vision';
-
+// import AOS from 'aos';
+// import 'aos/dist/aos.css'; // You can also use <link> for styles
+// // ..
+// AOS.init();
 export default function About() {
   return (
       <div className=" md:py-2 pl-10  bg-white">
           <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-              <div className="space-y-2 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-                  <div className="md:w-5/12 lg:w-2/5">
+              <div data-aos="fade-up-right" className=" space-y-2 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+                  <div  className=" md:w-6/12 ">
                       <img
                           src={home1}
                           alt="image"
+                          className='h-[550px] w-[500px] '
                       />
                   </div>
                   <div className="md:7/12 lg:w-6/12">
-                    <div className="about_head lg:mt-[-100px] ">
-                        
-                    </div>
-                      <h2 className="text-2xl text-gray-900  md:text-4xl  font-mono">
+                   
+                      <h2 className="text-2xl text-gray-900  md:text-4xl  font-mono lg:mt-20">
                       Elegant Entrepreneurs
                       </h2>
                       <p className="mt-8 text-gray-600  ">
-                      Welcome to Elegant Entrepreneurs, where the seeds of your
-                  business dreams find fertile ground to flourish. Founded by
-                  Sumit Kataria, the visionary leader behind Kataria Group,
-                  Elegant Entrepreneur is a platform dedicated to empowering
-                  individuals and groups on their entrepreneurial journey. At
-                  the heart of our mission is the commitment to provide
-                  comprehensive solutions for aspiring business owners, offering
-                  not just the inspiration, but the practical tools needed to
-                  turn ideas into successful ventures.
+                      Welcome to Elegant Entrepreneur, where the journey of turning entrepreneurial dreams into reality begins. Founded by Sumit Kataria, a visionary entrepreneur himself, Elegant Entrepreneur is more than just a platform; it's a dynamic space crafted to empower individuals and groups on their path to business success. Whether you're a budding entrepreneur or a seasoned professional seeking innovative solutions, we offer comprehensive services to guide you through the intricate process of starting a business.
                       </p>
                       <p className="mt-4 text-gray-600">
-                           With a focus on skill development and fostering
-                  entrepreneurship evolution, Elegant Entrepreneur stands as a
-                  beacon for those seeking to navigate the dynamic landscape of
-                  business ownership. Our dedicated team goes beyond the
-                  conventional by providing meticulously crafted project reports
-                  and innovative business ideas. We understand that the journey
-                  of starting a business can be daunting, and that's precisely
-                  why Elegant Entrepreneur exists – to guide, support, and
-                  propel you towards entrepreneurial success. Join us as we
-                  redefine the entrepreneurial experience, one elegant idea at a
-                  time.
+                      At Elegant Entrepreneur, our mission is rooted in the belief that entrepreneurship is a powerful force for positive change. Sumit Kataria envisioned this platform to not only provide crucial project guidance and business ideas but also to foster skill development through tailored programs. We understand the unique challenges individuals and groups face when venturing into the business world, and our commitment is to be your dedicated partner on this transformative journey. Join us at Elegant Entrepreneur, where innovation meets guidance, and dreams take flight.
                       </p>
                       <div className=" mt-4">
                     <Link to="about">
@@ -57,7 +41,6 @@ export default function About() {
                   
               </div>
           </div>
-          <div className='mt-4'><Vision /></div>
       </div>
   );
 }

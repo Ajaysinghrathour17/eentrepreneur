@@ -1276,32 +1276,37 @@ const Reports = () => {
   return (
     <>
        
-        <div className="bg-gradient-to-b from-gray-100 to-gray-100 py-16">
-      <div className="container mx-auto">
+        <div className="bg-gradient-to-b from-gray-100 to-gray-100 ">
+      <div className="  ">
         {/* Existing code for Vision and Mission */}
 
         {/* New section for Project Reports */}
-        <div className="mx-6">
-          <h2 className="text-3xl font-bold mb-4 text-gray-800 border-b-2 w-60 ">Project Reports</h2>
-          <p className="text-sm text-gray-700 mb-6">
+        <div className=" bg-gray-700">
+          <h2 className="text-3xl font-bold mb-4 text-white text-center pt-10">Project Reports</h2>
+          <p className="text-md text-white mb-6 px-40">
             Empower your business vision with our meticulously crafted Project Reports at Elegant Entrepreneur. Our reports provide in-depth analysis, market insights, and strategic recommendations tailored to your specific industry and goals. Whether you're seeking funding, validating an idea, or planning for expansion, our Project Reports are designed to be your comprehensive guide. Trust Elegant Entrepreneur to transform your business ideas into actionable plans with our expertly curated Project Reports.
           </p>
+
+          <div className="text-center text-white pb-10 ">  {`Click here to view all reports >`}
+        <a
+          href="https://docs.google.com/spreadsheets/d/1FiNxryEtVJWck7K6Auv668MfvEHCg47cMY5_sAq2DnY/edit#gid=0"
+          target="_blank"
+          className=" "
+        >
+        <button className="w-20 h-8 bg-white text-black rounded-md mx-3  hover:bg-orange-700 hover:text-white">view</button>
+        </a>
+              </div> 
         </div>
         
-        <div className="bg-gray-100 flex items-center justify-center  ">
+        
+        {/* <div className="bg-gray-100 flex items-center justify-center  ">
         <div
-          className="
-         
-        "
-        >
+          className="">
           {reports.map((item) => (
             <div className="flex ">
               <div
                 className="
-          border-2 pr-2
-        "
-              >
-                
+          border-2 pr-2">
                 <h2>{item.no} </h2>
               </div>
               <div>
@@ -1311,7 +1316,7 @@ const Reports = () => {
                 </a>
               </h2>
               </div>
-              <div className="text-center ">
+               <div className="text-center ">
         <a
           href="https://docs.google.com/spreadsheets/d/1FiNxryEtVJWck7K6Auv668MfvEHCg47cMY5_sAq2DnY/edit#gid=0"
           target="_blank"
@@ -1319,13 +1324,13 @@ const Reports = () => {
         >
         <button>View All</button>
         </a>
-      </div>
+      </div> 
             </div>
           ))}
-        </div>
-      </div>
-      </div>
-        </div>
+        </div> 
+      </div>  */}
+      </div>  
+        </div> 
       
     </>
   );

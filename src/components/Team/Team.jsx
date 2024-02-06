@@ -2,15 +2,7 @@
 
 import React from "react";
 import {
-  im1,
-  im2,
-  im3,
-  im4,
-  im5,
-  im6,
-  im7,
-  im8,
-  im9,
+  im1,  im2,im3,im4,im5,  im6,im7,im8,im9,
   akshat,
   sumit,
 } from "../../assets/image";
@@ -76,40 +68,36 @@ const Team = () => {
   ];
 
   return (
-    <div className=" py-12">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-gray-800 mx-6 text-center underline">
-          Our Team
-        </h2>
-        <div className="team_heads">
-          <div className="container flex justify-center gap-x-40">
-            <div className="team-member bg-white p-1 rounded-md shadow-md h-full w-[300px] transition-transform transform hover:scale-105">
-              <img
-                src={akshat}
-                alt="Akshat Kothari"
-                className="w-full h-80 object-contain  mb-4 rounded-md "
-              />
-              <h2 className="text-xl font-bold mb-2">Mr. Akshat Kothari</h2>
-              <p className="text-gray-700 mb-2">
-                MBA from Cardiff University (UK)
-              </p>
-              <p className="text-gray-700">
-                Founder of Parshw Capital & Global Venturas
-              </p>
-            </div>
-            <div className="team-member bg-white p-1 rounded-md shadow-md h-[450px] w-[300px] transition-transform transform hover:scale-105">
+    <div className=" ">
+      <div className=" ">
+             
+       
+        <div className="team_heads mb-5  " >
+           <div className="bg-gray-700 ">
+             <h2 className="py-10 text-white   duration-200 text-3xl font-sans text-center ">Germinators</h2>
+           </div>
+           <div className="text-center text-black text-xl">Team Elegant Entrepreneur</div>
+          <div className=" flex justify-center ">
+            <div className="team-member mt-4 bg-white p-1 rounded-md shadow-md h-auto w-[300px] ">
               <img
                 src={sumit}
                  
                 alt="Sumit Kataria"
-                className="w-full h-80 object-contain  mb-4 rounded-md "
+                className="w-full h-80 object-contain  mb-4 rounded-md  transition-transform transform hover:scale-105"
               />
+              <div className="text-center">
               <h2 className="text-xl font-bold mb-2">Mr. Sumit Kataria</h2>
-              <p className="text-gray-700">Founder of Kataria Groups</p>
+              <p className="text-gray-700"><b>Founder</b></p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-6 mt-6  gap-x-10  gap-y-4">
+
+        {/* cultivators */}
+        <div className="bg-gray-700 text-white font-bold text-2xl   uppercase h-20 flex justify-center items-center ">
+             <div>Cultivators</div>
+           </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-6 mt-6  gap-x-10  gap-y-4">
           {teamData.map((teamMember) => (
             <div
               key={teamMember.id}
@@ -118,7 +106,7 @@ const Team = () => {
               <img
                 src={teamMember.image}
                 alt={`Team Member ${teamMember.id}`}
-                className="w-full h-60 object-cover mb-4 rounded-md"
+                className="w-full h-80 object-cover mb-4 rounded-md transition-transform transform hover:scale-105"
               />
               <h3 className=" hidden  text-lg font-semibold mb-2">
                 {teamMember.title}

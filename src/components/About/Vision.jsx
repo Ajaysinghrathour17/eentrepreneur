@@ -3,18 +3,18 @@ import 'animate.css'; // Import animate.css for animations
 
 const Vision = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-200 to-gray-400 py-2 h-auto w-full  ">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 text-center mt-10">
-        <div className="bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeIn ">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Vision</h2>
-          <p className=" text-gray-700 leading-loose">
-            At Elegant Entrepreneur, our vision is to be the catalyst for a global revolution in entrepreneurship. We envision a world where every individual, armed with the right skills and innovative ideas, can confidently embark on the journey of building their own successful business. Through relentless dedication to excellence and a commitment to fostering creativity, we aspire to redefine the landscape of entrepreneurship, empowering dreamers to become thriving business owners.
-          </p>
+    <div className="bg-gray-700 h-auto w-full py-6 pb-10 ">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-20 px-5 text-center mt-10">
+        <div data-aos="fade-right" 
+       className="bg-white p-8 mb-4 rounded-lg shadow-lg animate__animated animate__fadeIn ">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4"> Vision</h2>
+          <p className=" text-gray-700 leading-loose lg:text-xl font-thin">
+          At Elegant Entrepreneur, we envision a global landscape where entrepreneurship is a catalyst for positive change. Our vision is to be a leading force in shaping a world where individuals and groups, armed with the right skills and visionary ideas, confidently embark on the journey of building successful and impactful businesses. We strive to redefine the entrepreneurial experience, fostering a community that thrives on innovation, collaboration, and sustainable growth. Elegant Entrepreneur aspires to be the driving force behind a new era of empowered and successful entrepreneurs.</p>
         </div>
-        <div className="bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeIn">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Mission</h2>
-          <p className=" text-gray-700 leading-loose">
-            Our mission at Elegant Entrepreneur is to provide unparalleled support and resources for aspiring entrepreneurs. We strive to cultivate a community where ideas flourish and skills are honed. By offering comprehensive business solutions, skill development programs, and a nurturing environment, we aim to inspire, guide, and propel individuals towards sustainable and impactful business ventures. Elegant Entrepreneur is not just a platform; it's a movement that propels the evolution of entrepreneurship.
+        <div data-aos="fade-left" className="bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeIn ">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4"> Mission</h2>
+          <p className=" text-gray-700 leading-loose lg:text-xl font-thin ">
+          Our mission at Elegant Entrepreneur is to provide unparalleled support and resources for aspiring individuals and groups venturing into the realm of entrepreneurship. We are dedicated to offering innovative solutions, whether through comprehensive project reports or inspiring business ideas, tailored to the unique needs of our users. Beyond that, we are committed to nurturing skill development through targeted programs, equipping our community with the tools and knowledge essential for success. Elegant Entrepreneur is more than a platform; it is a movement that propels the evolution of entrepreneurship by guiding, inspiring, and empowering individuals to realize their full potential in the world of business.
           </p>
         </div>
       </div>

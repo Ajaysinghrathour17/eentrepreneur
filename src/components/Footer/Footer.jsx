@@ -8,14 +8,14 @@ import { IoMdMailUnread, IoMdCall } from "react-icons/io";
 
 export default function Footer() {
     return (
-        <footer className="bg-white border-y">
+        <footer className="bg-gray-200 border-y text-gray-800  pt-7 ">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
                                 src={logo}
-                                className="mr-3 h-16"
+                                className="mr-3 h-24"
                                 alt="Logo"
                             />
                         </Link>
@@ -23,25 +23,24 @@ export default function Footer() {
                         <div className='mt-6'>
                         <SocialIcons />
                         </div>
-                        <div  className="flex items-center">
-                            <div>
-                                
-                            </div>
-                            <div className=" items-center mt-3">
-                                <div className='flex'>
-                                <div> <IoMdMailUnread /> <div>Support@eentrepreneur.in</div></div>
+                        <div  className="flex-col ">
+                    
+                            <div className=" mt-3">
+                                <div className='flex ' > 
+                                    <div className='mt-[2px] '><IoMdMailUnread /></div>
+                                    <div className='ml-3'>support@eentrepreneur.in</div></div>
                                 </div>
                                 <div>
-                                <span> <IoMdCall /> <span>07344010001</span></span>
+                                <div className='flex mt-2'>
+                                     <div><IoMdCall /></div> <div className='ml-3'>07344010001</div></div>
                                 </div>
                             </div>
-                        </div>
 
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase underline">Resources</h2>
+                            <ul className="text-gray-600 font-semibold">
                                 <li className="mb-4">
                                     <Link to="/" className="hover:underline">
                                         Home
@@ -52,6 +51,11 @@ export default function Footer() {
                                         About
                                     </Link>
                                 </li>
+                                <li className='mb-4'>
+                                    <Link to="/gallery" className="hover:underline">
+                                       Gallery
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link to="/reports" className="hover:underline">
                                        Project Reports
@@ -60,8 +64,8 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Services</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase underline">Services</h2>
+                            <ul className="text-gray-600 font-medium">
                                 <li className="mb-4 hover:underline">
                                 Business Ideation & Conceptualization
                                 </li>
@@ -74,8 +78,8 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-sm font-bold underline text-gray-900 uppercase">Legal</h2>
+                            <ul className="text-gray-600 font-medium">
                                 <li className="mb-4">
                                     <Link to="#" className="hover:underline">
                                         Privacy Policy

@@ -8,30 +8,31 @@ const Services = () => {
     {
       title: 'Business Ideation & Conceptualization',
       description:
-        "At Elegant Entrepreneur, we kickstart your entrepreneurial journey with our Business Ideation and Conceptualization service. Led by Sumit Kataria, founder of Kataria Group, our team provides innovative and carefully crafted business ideas tailored to your vision."
+        "Embark on your entrepreneurial journey with Elegant Entrepreneur's Business Ideation and Conceptualization service. Led by our visionary founder, Sumit Kataria, we offer innovative and meticulously crafted business ideas tailored to your unique vision. Whether you're a seasoned entrepreneur or just starting, our expert team provides guidance to kickstart your business venture on the path to success."
     },
     {
       title: 'Comprehensive Project Reports',
       description:
-        "Our Comprehensive Project Reports service sets us apart as a go-to resource for those serious about turning their business dreams into reality. Backed by the expertise of Elegant Entrepreneur, we deliver detailed and insightful project reports that serve as roadmaps for your business endeavors.."
+        "Dive into the intricate world of business with our Comprehensive Project Reports service. Elegant Entrepreneur serves as your go-to resource for turning business dreams into actionable plans. Our reports offer in-depth analysis, market insights, and strategic recommendations, providing a solid foundation for decision-making and securing the support you need to bring your vision to life."
+    },
+    
+    {
+      title: 'Entrepreneurship Program',
+      description:
+        "The Entrepreneurship  Program at Elegant Entrepreneur symbolizes our commitment to your long-term success. This program goes beyond traditional business services, offering a holistic approach to entrepreneurship. Join a community dedicated to continuous learning, networking, and support, fostering an environment where innovation and growth go hand in hand."
     },
     {
       title: 'Skill Development Workshops',
       description:
-        "levate your entrepreneurial journey with our Skill Development Workshops at Elegant Entrepreneur. We believe that acquiring the right skills is paramount for business success. Our workshops, curated by industry experts, cover a spectrum of essential skills, from effective communication to strategic decision-making."
-    },
-    {
-      title: 'Entrepreneurship Evolution Program',
-      description:
-        "The Evolution Program at Elegant Entrepreneur signifies our commitment to your long-term success. Our vision, rooted in the belief that entrepreneurship is an evolving process, is embodied in this program. Through mentorship, ongoing support, and access to exclusive resources, we ensure that your entrepreneurial journey is not just a one-time venture but a continuous evolution towards greater heights of success."
-    },
+        "Elevate your entrepreneurial journey with Elegant Entrepreneur's Skill Development Workshops. Designed to empower individuals and groups, our workshops cover a spectrum of essential skills, from leadership and communication to strategic planning. Gain the knowledge and expertise needed to navigate the dynamic landscape of business and enhance your capabilities as a successful entrepreneur."
+    }
   ];
 
   return (
-    <div className="container mx-auto my-8">
-      <h2 className="text-3xl font-bold mb-6 ml-6 text-gray-800  underline">Our Services</h2>
-
-      <div className="flex flex-wrap mx-4 ">
+    <div className=" mx-0 py-4 bg-gray-700">
+      <h2 className="text-3xl text-white font-bold mb-6 ml-6 pt-6 text-center">Our Services</h2>
+      
+      <div className="flex flex-wrap  ">
         {services.map((service, index) => (
           <ServiceComponent key={index} {...service} />
         ))}

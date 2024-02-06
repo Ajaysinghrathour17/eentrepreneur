@@ -6,10 +6,10 @@ const AboutPage = () => {
   return (
     <>
      
-      <div className="">
-        <div className='bg-gray-100 h-20 '>
+      <div className="pb-8">
+        <div className='bg-gray-700  '>
             <h2 
-            className= "block pt-8  pl-20 duration-200 text-3xl font-sans text-center  "
+            className= " py-10 text-white   duration-200 text-3xl font-sans text-center  "
         
         >About Us</h2>
             

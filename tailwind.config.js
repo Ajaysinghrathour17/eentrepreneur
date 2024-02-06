@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        '[heropage]': "url('./src/assets/image/home.jpg')",
+      }),
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
