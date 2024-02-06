@@ -8,6 +8,17 @@ import gallery1 from "./gallery1.jpeg"
 import gallery2 from "./gallery2.jpeg"
 import gallery3 from "./gallery3.jpeg"
 import gallery4 from "./gallery4.jpeg"
+import im1 from "./im1.jpeg"
+import im2 from "./im2.jpeg"
+import im3 from "./im3.jpeg"
+import im4 from "./im4.jpeg"
+import im5 from "./im5.jpeg"
+import im6 from "./im6.jpeg"
+import im7 from "./im7.jpeg"
+import im8 from "./im8.jpeg"
+import im9 from "./im9.jpeg"
+import akshat from "./akshat.jpeg"
+import sumit from "./sumit.jpeg"
 
 export {
     logo,
@@ -20,5 +31,14 @@ export {
 gallery2,
 gallery3,
 gallery4,
+im1,
+im2,
+im3,
+im4,
+im5,
+im6,
+im7,
+im8,
+im9, akshat , sumit
 
 }

@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 ./entrepreneur
+dist
+dist.zip
 
 
 
@@ -27,3 +29,7 @@ dist-ssr
 *.sw?
 
 .vercel
+
+.vercel
+entrepreneur/31jan.zip
+entrepreneur/31jan.zip

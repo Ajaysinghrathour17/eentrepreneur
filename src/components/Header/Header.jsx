@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { logo } from '../../assets/image';
 import ArrowUp from '../Button/ArrowUp';
+import SocialIcons from '../Button/SocialIcons';
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -12,12 +13,16 @@ export default function Header() {
 
   return (
     <header className=" z-50 top-0">
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+      <nav className="bg-white border-gray-200  sm:px-4 lg:px-8 py-2.5">
         <div className="flex flex-wrap justify-between items-center">
-          <div>
+          <div className=''>
             <Link to="/" className="flex items-center">
               <img src={logo} className="ml-5 h-20 w-18" alt="Logo" />
             </Link>
+          </div>
+          {/* social icons */}
+          <div className='hidden md:block sm:pr-10 text-2xl mt-5'>
+            <SocialIcons />
           </div>
 
           {/* Menu icon for mobile */}
@@ -41,7 +46,7 @@ export default function Header() {
             ) : (
               // Hamburger icon when menu is closed
               <svg
-                className="w-6 h-6 text-gray-700"
+                className="w-6 h-8 mr-4 text-2xl text-gray-700"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -61,14 +66,14 @@ export default function Header() {
           <div
             className={`${
               isMenuOpen ? 'lg:flex lg:items-center lg:w-full' : 'hidden'
-            } lg:block w-full mt-4 ml-7`}
+            } lg:block w-full mt-4 ml-4`}
           >
-            <ul className="flex flex-col lg:flex-row text-xl font-medium lg:space-x-8 ">
+            <ul className="flex flex-col lg:flex-row  text-xl font-medium lg:space-x-8 ">
               <li>
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200  ${
+                    `block py-2 pr-6  duration-200  ${
                       isActive ? 'text-orange-700' : 'text-gray-700'
                     } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }

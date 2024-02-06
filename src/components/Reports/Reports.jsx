@@ -1276,21 +1276,22 @@ const Reports = () => {
   return (
     <>
        
-        <div className="bg-gradient-to-b from-gray-200 to-gray-100 py-16">
+        <div className="bg-gradient-to-b from-gray-100 to-gray-100 py-16">
       <div className="container mx-auto">
         {/* Existing code for Vision and Mission */}
 
         {/* New section for Project Reports */}
-        <div className="">
-          <h2 className="text-3xl font-bold mb-8 text-purple-800 border-b-2 w-60">Project Reports</h2>
-          <p className="text-lg text-gray-700">
+        <div className="mx-6">
+          <h2 className="text-3xl font-bold mb-4 text-gray-800 border-b-2 w-60 ">Project Reports</h2>
+          <p className="text-sm text-gray-700 mb-6">
             Empower your business vision with our meticulously crafted Project Reports at Elegant Entrepreneur. Our reports provide in-depth analysis, market insights, and strategic recommendations tailored to your specific industry and goals. Whether you're seeking funding, validating an idea, or planning for expansion, our Project Reports are designed to be your comprehensive guide. Trust Elegant Entrepreneur to transform your business ideas into actionable plans with our expertly curated Project Reports.
           </p>
         </div>
-        <div className="bg-gray-100 flex items-center justify-center ">
+        
+        <div className="bg-gray-100 flex items-center justify-center  ">
         <div
           className="
-          border-2
+         
         "
         >
           {reports.map((item) => (

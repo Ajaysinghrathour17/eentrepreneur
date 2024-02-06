@@ -29,9 +29,9 @@ const Services = () => {
 
   return (
     <div className="container mx-auto my-8">
-      <h2 className="text-3xl font-bold mb-6 ml-4 text-gray-800">Our Services</h2>
+      <h2 className="text-3xl font-bold mb-6 ml-6 text-gray-800  underline">Our Services</h2>
 
-      <div className="flex flex-wrap -mx-4">
+      <div className="flex flex-wrap mx-4 ">
         {services.map((service, index) => (
           <ServiceComponent key={index} {...service} />
         ))}

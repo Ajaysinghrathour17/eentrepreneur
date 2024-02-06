@@ -11,13 +11,13 @@ export default function Home() {
   const galleryItems = [
     {
       id: 1,
-      image: "https://www.katariaweb.in/assets/img/4.jpeg",
-      title: "Investor Awareness Program",
+      image: "https://scontent.fdel5-1.fna.fbcdn.net/v/t39.30808-6/352727647_117330641383039_2454725517890607298_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=fP52tVWyGZMAX-AflR2&_nc_ht=scontent.fdel5-1.fna&oh=00_AfBXEzp4qqYQI-nn-L93TCqLEhoSPYGga_Vnf9mvHb4Tjw&oe=65C31F04",
+      title: "Food Competition",
     },
     {
       id: 2,
       image: "https://www.katariaweb.in/assets/img/4.jpeg",
-      title: "Program 2",
+      title: "Investor Awareness Program",
     },
     // Add more items as needed
   ];
@@ -56,8 +56,8 @@ export default function Home() {
         <Services />
       </section>
 
-      <secction className="about_section h-screen">
-        <h2 className="text-3xl font-bold mb-6 ml-4 text-gray-800">About us</h2>
+      <secction className="about_section h-screen md:mt-[-100px] ">
+        <h2 className="text-3xl font-bold mb-6 ml-8 text-gray-800 underline">About us</h2>
 
         <About className="pt-[-100px]" />
       </secction>
@@ -65,7 +65,7 @@ export default function Home() {
       {/* programs */}
       <div className="programs my-12">
         <div className="head flex justify-between px-4">
-          <div className=" text-3xl font-bold border-b-4 hover:border-b-orange-600 hover:delay-100	">
+          <div className=" text-3xl font-bold ml-6 border-b-4 hover:border-b-orange-600 hover:delay-100	">
             Our Programmes
           </div>
           <div className="text-center mt-4">
@@ -74,7 +74,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 mt-5 md:m-5 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 mt-5 md:m-5 lg:grid-cols-3 gap-4">
           {galleryItems.map((item) => (
             <div key={item.id} className="p-4 bg-white rounded-md shadow-md">
               <img

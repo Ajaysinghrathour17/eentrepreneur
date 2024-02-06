@@ -1,10 +1,11 @@
 import React from 'react'
 import { home1, logo } from '../../assets/image';
 import { Link } from 'react-router-dom';
+import Vision from './Vision';
 
 export default function About() {
   return (
-      <div className="py-16 pl-10  bg-white">
+      <div className=" md:py-2 pl-10  bg-white">
           <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
               <div className="space-y-2 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                   <div className="md:w-5/12 lg:w-2/5">
@@ -20,7 +21,7 @@ export default function About() {
                       <h2 className="text-2xl text-gray-900  md:text-4xl  font-mono">
                       Elegant Entrepreneurs
                       </h2>
-                      <p className="mt-6 text-gray-600 font ">
+                      <p className="mt-8 text-gray-600  ">
                       Welcome to Elegant Entrepreneurs, where the seeds of your
                   business dreams find fertile ground to flourish. Founded by
                   Sumit Kataria, the visionary leader behind Kataria Group,
@@ -51,10 +52,12 @@ export default function About() {
                     </button>
                      </Link>
                      </div>
+                     
                   </div>
                   
               </div>
           </div>
+          <div className='mt-4'><Vision /></div>
       </div>
   );
 }
