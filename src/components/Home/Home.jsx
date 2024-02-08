@@ -26,8 +26,11 @@ export default function Home() {
       <div className="relative h-[600px]  ">
       
         <div className="absolute inset-0 flex items-center justify-center">
-          <div data-aos="zoom-in"  data-aos-delay="50"
-    data-aos-duration="500"
+          <div data-aos="zoom-in"  data-aos-delay="200"  
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
     data-aos-easing="ease-in-out" className="bg-gray-800 bg-opacity-50  text-white p-8 rounded-[20px] max-w-3xl mx-auto text-center">
             <h3 className="italic font-bold text-3xl lg:text-4xl xl:text-5xl mb-6 uppercase">
               "It always seems impossible until it's done"

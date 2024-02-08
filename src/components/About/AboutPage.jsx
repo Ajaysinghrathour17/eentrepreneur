@@ -9,7 +9,7 @@ const AboutPage = () => {
       <div className="pb-8">
         <div className='bg-gray-700  '>
             <h2 
-            className= " py-10 text-white   duration-200 text-3xl font-sans text-center  "
+            className= " py-10 text-white  text-3xl font-sans text-center  "
         
         >About Us</h2>
             

@@ -4,7 +4,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const SocialIcons = () => {
   return (
-    <div className="flex space-x-4  ">
+    <div className="bg-white rounded-md px-4 py-1">
+       <div className="flex space-x-4  ">
       {/* Facebook */}
       <a
         href="https://www.facebook.com/elegantenterpreneur"
@@ -43,6 +44,7 @@ const SocialIcons = () => {
       <a href="#"  rel="noopener noreferrer">
         <FaXTwitter className="text-gray-600 hover:text-blue-600 w-6 h-6" />
       </a>
+    </div>
     </div>
   );
 };

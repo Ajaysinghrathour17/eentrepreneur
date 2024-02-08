@@ -27,7 +27,7 @@ const Videos = () => {
         </video>
       </div>
       <div className="w-full md:w-1/2  lg:w-1/3  p-4" data-aos="fade-up" data-aos-delay="400">
-        <video className="w-full" controls autoPlay >
+        <video className="w-full" controls  >
           <source src={eventV3} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

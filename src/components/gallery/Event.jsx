@@ -10,6 +10,7 @@ const Event = () => {
         </h2>
       </div>
       <div>
+        
         <Videos />
       </div>
     </div>

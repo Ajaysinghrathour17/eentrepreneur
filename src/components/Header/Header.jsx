@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { logo } from "../../assets/image";
 import ArrowUp from "../Button/ArrowUp";
 import SocialIcons from "../Button/SocialIcons";
+import TopHeader from "./TopHeader";
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -12,13 +13,16 @@ export default function Header() {
   };
 
   return (
-    <header className=" bg-gray-100 pb-1">
+    <>
+     <TopHeader />
+    <header className=" w-full bg-gray-100 pb-1">
+      
       <nav className="sm:px-4 lg:px-4 ">
         <div className="flex flex-wrap md:flex-nowrap lg:justify-end items-center">
           <div className="w-full flex justify-between">
             <div>
               <Link to="/" className="flex items-center">
-                <img src={logo} className="ml-5 h-20 w-18" alt="Logo" />
+                <img src={logo} className="ml-10 h-20 w-18" alt="Logo" />
               </Link>
             </div>
 
@@ -68,14 +72,15 @@ export default function Header() {
 
           {/* Navigation links for desktop */}
           
-          <div data-aos="fade-right" data-aos-delay="50"
-    data-aos-duration="1000"
+          <div 
             className={`${
               isMenuOpen ? "sm:flex lg:items-center lg:w-full" : "hidden"
-            }  ml-5 md:block w-full mt-2 pl-4 bg-gray-100`}
+            }  ml-5 md:block w-full mt-2 pl-4 bg-gray-100`}  
+           
           >
-            <ul className=" flex flex-col  md:justify-end md:flex-row  text-[1.4rem] font-medium lg:pr-52  lg:space-x-16 text-white ">
-              <li>
+            <ul  className=" flex flex-col  md:justify-end md:flex-row  text-[1.4rem] font-medium lg:pr-52  lg:space-x-12 text-white ">
+              <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
@@ -87,7 +92,8 @@ export default function Header() {
                   Home
                 </NavLink>
               </li>
-              <li>
+              <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
@@ -99,7 +105,8 @@ export default function Header() {
                   About
                 </NavLink>
               </li>
-              <li>
+              <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
                 <NavLink
                   to="/team"
                   className={({ isActive }) =>
@@ -111,7 +118,8 @@ export default function Header() {
                   Team
                 </NavLink>
               </li>
-              <li>
+              <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
                 <NavLink
                   to="/reports"
                   className={({ isActive }) =>
@@ -120,10 +128,11 @@ export default function Header() {
                     } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
                   }
                 >
-                  Reports
+                  Projects
                 </NavLink>
               </li>
-              <li>
+              <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
                 <NavLink
                   to="/gallery"
                   className={({ isActive }) =>
@@ -135,7 +144,8 @@ export default function Header() {
                   Gallery
                 </NavLink>
               </li>
-              <li>
+              <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
                 <NavLink
                   to="/events"
                   className={({ isActive }) =>
@@ -147,7 +157,21 @@ export default function Header() {
                   Events
                 </NavLink>
               </li>
-              <li>
+              <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
+                <NavLink
+                  to="/media"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
+                  }
+                >
+                  Media
+                </NavLink>
+              </li>
+              <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
                 <NavLink
                   to=""
                   className={({ isActive }) =>
@@ -164,5 +188,6 @@ export default function Header() {
         </div>
       </nav>
     </header>
+    </>
   );
 }

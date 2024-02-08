@@ -8,9 +8,9 @@ import Vision from './Vision';
 // AOS.init();
 export default function About() {
   return (
-      <div className=" md:py-2 pl-10  bg-white">
+      <div className="md:py-2 pl-10  bg-white">
           <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-              <div data-aos="fade-up-right" className=" space-y-2 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+              <div data-aos="fade-up" className="space-y-2 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                   <div  className=" md:w-6/12 ">
                       <img
                           src={home1}

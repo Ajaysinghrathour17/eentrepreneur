@@ -18,12 +18,13 @@ import AboutPage from "./components/About/AboutPage.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Event from "./components/gallery/Event.jsx";
+import Media from "./Pages/Media.jsx";
 // ..
 AOS.init();
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/" element={<Layout />} >
       <Route path="" Component={Home} />
       <Route path="about" Component={AboutPage} />
       <Route path="team" element={<Team />} />
@@ -31,6 +32,8 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="gallery" element={<Gallery />} />
       <Route path="events" element={<Event />} />
+      <Route path="media" element={<Media />} />
+
 
 
     </Route>

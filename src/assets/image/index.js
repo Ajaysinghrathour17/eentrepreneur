@@ -23,15 +23,28 @@ import eventV1 from './v1.mp4';
 import eventV2 from './v2.mp4';
 import eventV3 from './v3.mp4';
 import eventV4 from './v4.mp4';
+import person from './person.png';
+import gall1 from './img1.jpeg';
+import gall3 from './img3.jpeg';
+import gall4 from './img4.jpeg';
+import gall5 from './img5.jpeg';
+import gall6 from './img6.jpeg';
+import gall7 from './img7.jpeg';
+import gall8 from './img8.jpeg';
+import gall9 from './img9.jpeg';
+import gall10 from './img10.jpeg';
+import gall11 from './img11.jpeg';
+
 
 export {
     logo,asset1,asset2,asset3,
     home,home1,
     gallery1,gallery2,gallery3,gallery4,
-im1,im2,
-im3,im4,im5,im6,
-im7,im8,
-im9, akshat , sumit,
-eventV1, eventV2, eventV3, eventV4
+   im1,im2,
+   im3,im4,im5,im6,
+   im7,im8,
+   im9, akshat , sumit,
+   eventV1, eventV2, eventV3, eventV4, person,
+   gall1, gall3, gall4, gall5,gall6,gall7,gall8, gall9 ,gall10, gall11
 
 }

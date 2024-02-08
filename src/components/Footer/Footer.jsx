@@ -32,7 +32,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                 <div className='flex mt-2'>
-                                     <div><IoMdCall /></div> <div className='ml-3'>07344010001</div></div>
+                                     <div><IoMdCall /></div> <div className='ml-3'> +91 2269622640</div></div>
                                 </div>
                             </div>
 
