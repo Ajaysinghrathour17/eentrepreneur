@@ -5,8 +5,8 @@ import SocialIcons from "../Button/SocialIcons";
 const TopHeader = () => {
   return (
     <div className="mb-1 ">
-      <div className="pt-2 bg-gray-700 h-12 flex justify-between px-5">
-         <div className="flex">
+      <div className="pt-2 bg-gray-700 lg:h-12 flex justify-between px-5">
+         <div className="md:flex">
          <div className="ml-3 text-white flex">
           <div className="mt-1 pr-2">
             <IoMdMailUnread />{" "}

@@ -1,6 +1,6 @@
 {
   "name": "eetrepreneur",
-  "homepage": "https://eentrepreneur.in/",
+  "homepage": "https://eentrepreneur.in",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -19,7 +19,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.18.0",
-    "react-transition-group": "^4.4.5"
+    "react-transition-group": "^4.4.5",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -30,7 +31,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "vite": "^4.4.5"
   }

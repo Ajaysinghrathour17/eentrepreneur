@@ -1,5 +1,6 @@
 import React from "react";
 import "./report.css";
+import LiveProject from "./LiveProject";
 const Reports = () => {
   const reportOther = [
     {
@@ -1331,7 +1332,9 @@ const Reports = () => {
       </div>  */}
       </div>  
         </div> 
-      
+     <div className="bg-white">
+     <LiveProject />
+     </div>
     </>
   );
 };

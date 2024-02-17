@@ -6,9 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: theme => ({
-        '[heropage]': "url('./src/assets/image/home.jpg')",
-      }),
+      
     },
   },
   plugins: [

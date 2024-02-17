@@ -1,17 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { asset1, asset2, asset3, home, home1 } from "../../assets/image";
+import { asset1, asset2, asset3, event1, home, home1, } from "../../assets/image";
 import "../../App.css";
 import About from "../About/About";
 import Services from "../Services/Services";
 import Vision from "../About/Vision";
+import LiveProject from "../Reports/LiveProject";
 
 
 export default function Home() {
   const galleryItems = [
     {
       id: 1,
-      image: "https://scontent.fdel5-1.fna.fbcdn.net/v/t39.30808-6/352727647_117330641383039_2454725517890607298_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=fP52tVWyGZMAX-AflR2&_nc_ht=scontent.fdel5-1.fna&oh=00_AfBXEzp4qqYQI-nn-L93TCqLEhoSPYGga_Vnf9mvHb4Tjw&oe=65C31F04",
+      image:event1,
+      src:"https://www.facebook.com/photo.php?fbid=117330651383038&set=pb.100093183115275.-2207520000&type=3"  ,
       title: "Food Competition",
     },
     // {
@@ -20,9 +22,10 @@ export default function Home() {
     //   title: "Social Work" }
     // Add more items as needed
   ];
+  
   return (
     <div className="">
-      <div className=" bg-[heropage] bg-cover">
+      <div className= {`bg-[url('../src/assets/image/home.jpg')] bg-cover`}>
       <div className="relative h-[600px]  ">
       
         <div className="absolute inset-0 flex items-center justify-center">
@@ -77,7 +80,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-4">
             <Link to="/events" >
-            <button className="bg-gray-200 text-black py-2 px-4 rounded-md transition duration-300 hover:bg-orange-700 hover:text-white">
+            <button title="view" className="bg-gray-200 text-black py-2 px-4 rounded-md transition duration-300 hover:bg-orange-700 hover:text-white">
               View All
             </button>
             </Link>
@@ -86,19 +89,27 @@ export default function Home() {
         <div className="grid grid-cols-1 mt-5 md:m-5 lg:grid-cols-3  gap-4">
           {galleryItems.map((item) => (
             <div key={item.id} className="p-2 bg-white rounded-md shadow-md">
+              <a href={item.src} target="_blank">
               <img
                 src={item.image}
                 alt={item.title}
                 className="w-full h-86	 object-cover rounded-md mb-2 hover:shadow-2xl transition duration-300 transform hover:scale-105"
               />
+              </a>
               <h3 className="text-lg font-medium text-center">{item.title}</h3>
               {/* Add additional information or actions as needed */}
             </div>
+            
           ))}
         </div>
+        {/* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Felegantenterpreneur%2Fposts%2Fpfbid04Y56w76sgNVbqStvn4x9YffxynCvjWE2qDhjJk6AGkiG8eCDDPYq837c45ZCpkbgl&show_text=false&width=500" width="500" height="634" style={{"border":"none","overflow":"hidden"}} onScroll="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> */}
       </div>
 
       {/* programs */}
+
+      <div>
+        <LiveProject />
+      </div>
 
     
     </div>

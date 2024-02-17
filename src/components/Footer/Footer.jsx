@@ -38,8 +38,8 @@ export default function Footer() {
 
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                        <div>
-                            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase underline">Resources</h2>
+                        <div className='pl-4'>
+                            <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase underline ">Resources</h2>
                             <ul className="text-gray-600 font-semibold">
                                 <li className="mb-4">
                                     <Link to="/" className="hover:underline">
