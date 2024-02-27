@@ -19,6 +19,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Event from "./components/gallery/Event.jsx";
 import Media from "./Pages/Media.jsx";
+import JoinUs from "./components/JoinUs/JoinUs.jsx";
 // ..
 AOS.init();
 
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
       <Route path="" Component={Home} />
       <Route path="about" Component={AboutPage} />
       <Route path="team" element={<Team />} />
+      <Route path="join-us" element={<JoinUs />} />
       <Route path="reports" element={<Reports />} />
       <Route path="contact" element={<Contact />} />
       <Route path="gallery" element={<Gallery />} />

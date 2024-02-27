@@ -107,7 +107,7 @@ export default function Home() {
 
       {/* programs */}
 
-      <div>
+      <div id="live_project">
         <LiveProject />
       </div>
 

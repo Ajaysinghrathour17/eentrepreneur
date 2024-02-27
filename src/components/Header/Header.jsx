@@ -78,7 +78,7 @@ export default function Header() {
             }  ml-5 md:block w-full mt-2 pl-4 bg-gray-100`}  
            
           >
-            <ul  className=" flex flex-col  md:justify-end md:flex-row  text-[1.4rem] font-medium lg:pr-52  lg:space-x-12 text-white ">
+            <ul  className=" flex flex-col  md:justify-end md:flex-row  text-[1.4rem] font-medium lg:pr-4  lg:space-x-10 text-white ">
               <li  data-aos="fade-right" data-aos-delay="50"
             data-aos-duration="1000">
                 <NavLink
@@ -86,7 +86,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-6  duration-200  ${
                       isActive ? "text-orange-700" : "text-gray-700"
-                    }  hover:border-b-2 hover:bg-gray-50 lg:hover:bg-transparent  hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
+                    }  hover:border-b-2 hover:bg-gray-50 lg:hover:bg-transparent  hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
                   }
                 >
                   Home
@@ -99,7 +99,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
                   }
                 >
                   About
@@ -112,7 +112,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
                   }
                 >
                   Team
@@ -125,12 +125,25 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
                   }
                 >
                   Projects
                 </NavLink>
               </li>
+              {/* <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
+                <a
+                  href="live_project"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
+                  }
+                >
+                  Live Projects
+                </a>
+              </li> */}
               <li  data-aos="fade-right" data-aos-delay="50"
             data-aos-duration="1000">
                 <NavLink
@@ -138,7 +151,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
                   }
                 >
                   Gallery
@@ -151,7 +164,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
                   }
                 >
                   Events
@@ -164,7 +177,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
                   }
                 >
                   Media
@@ -173,11 +186,11 @@ export default function Header() {
               <li  data-aos="fade-right" data-aos-delay="50"
             data-aos-duration="1000">
                 <NavLink
-                  to=""
+                  to="/join-us"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-105`
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
                   }
                 >
                   <button className="w-32 bg-gray-800 rounded-[20px]  text-white">Join us </button>

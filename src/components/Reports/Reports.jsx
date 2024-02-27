@@ -1,5 +1,4 @@
 import React from "react";
-import "./report.css";
 import LiveProject from "./LiveProject";
 const Reports = () => {
   const reportOther = [
@@ -1276,14 +1275,17 @@ const Reports = () => {
 
   return (
     <>
-       
-        <div className="bg-gradient-to-b from-gray-100 to-gray-100 ">
+      <div className="bg-white mt-1">
+     <LiveProject />
+     </div>
+
+        <div className="bg-gradient-to-b from-gray-100 to-gray-100 mt-1  ">
       <div className="  ">
         {/* Existing code for Vision and Mission */}
 
         {/* New section for Project Reports */}
-        <div className=" bg-gray-700">
-          <h2 className="text-3xl font-bold mb-4 text-white text-center pt-10">Project Reports</h2>
+        <div className=" bg-gray-700 pb-10">
+          <h2 className="text-3xl font-bold mb-4 text-white text-center pt-10 ">Project Reports</h2>
           <p className="text-md text-white mb-6 px-40">
             Empower your business vision with our meticulously crafted Project Reports at Elegant Entrepreneur. Our reports provide in-depth analysis, market insights, and strategic recommendations tailored to your specific industry and goals. Whether you're seeking funding, validating an idea, or planning for expansion, our Project Reports are designed to be your comprehensive guide. Trust Elegant Entrepreneur to transform your business ideas into actionable plans with our expertly curated Project Reports.
           </p>
@@ -1332,9 +1334,7 @@ const Reports = () => {
       </div>  */}
       </div>  
         </div> 
-     <div className="bg-white">
-     <LiveProject />
-     </div>
+     
     </>
   );
 };

@@ -23,6 +23,8 @@ import eventV1 from './v1.mp4';
 import eventV2 from './v2.mp4';
 import eventV3 from './v3.mp4';
 import eventV4 from './v4.mp4';
+import eventV5 from './v5.mp4';
+
 import person from './person.png';
 import gall1 from './img1.jpeg';
 import gall3 from './img3.jpeg';
@@ -48,7 +50,7 @@ export {
    im3,im4,im5,im6,
    im7,im8,
    im9, akshat , sumit,
-   eventV1, eventV2, eventV3, eventV4, person,
+   eventV1, eventV2, eventV3, eventV4,eventV5, person,
    gall1, gall3, gall4, gall5,gall6,gall7,gall8, gall9 ,gall10, gall11,
    media1,media2 ,  project1
 
