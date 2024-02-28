@@ -7,6 +7,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+//pages
 import Layout from "./Layout.jsx";
 import Home from "./components/Home/Home.jsx";
 import Contact from "./components/Contact/Contact.jsx";
@@ -14,13 +15,12 @@ import Team from "./components/Team/Team.jsx";
 import Reports from "./components/Reports/Reports.jsx";
 import Gallery from "./components/gallery/Gallery.jsx";
 import AboutPage from "./components/About/AboutPage.jsx";
-
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Event from "./components/gallery/Event.jsx";
 import Media from "./Pages/Media.jsx";
 import JoinUs from "./components/JoinUs/JoinUs.jsx";
-// ..
+// ..AOS for animation on scroll
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 
 const router = createBrowserRouter(

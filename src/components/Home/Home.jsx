@@ -6,22 +6,11 @@ import About from "../About/About";
 import Services from "../Services/Services";
 import Vision from "../About/Vision";
 import LiveProject from "../Reports/LiveProject";
+import EventItem from "../gallery/EventItem";
 
 
 export default function Home() {
-  const galleryItems = [
-    {
-      id: 1,
-      image:event1,
-      src:"https://www.facebook.com/photo.php?fbid=117330651383038&set=pb.100093183115275.-2207520000&type=3"  ,
-      title: "Food Competition",
-    },
-    // {
-    //   id: 2,
-    //   image: "https://www.facebook.com/reel/379386294517949",
-    //   title: "Social Work" }
-    // Add more items as needed
-  ];
+ 
   
   return (
     <div className="">
@@ -86,25 +75,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 mt-5 md:m-5 lg:grid-cols-3  gap-4">
-          {galleryItems.map((item) => (
-            <div key={item.id} className="p-2 bg-white rounded-md shadow-md">
-              <a href={item.src} target="_blank">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-86	 object-cover rounded-md mb-2 hover:shadow-2xl transition duration-300 transform hover:scale-105"
-              />
-              </a>
-              <h3 className="text-lg font-medium text-center">{item.title}</h3>
-              {/* Add additional information or actions as needed */}
-            </div>
-            
-          ))}
-        </div>
-        {/* <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Felegantenterpreneur%2Fposts%2Fpfbid04Y56w76sgNVbqStvn4x9YffxynCvjWE2qDhjJk6AGkiG8eCDDPYq837c45ZCpkbgl&show_text=false&width=500" width="500" height="634" style={{"border":"none","overflow":"hidden"}} onScroll="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> */}
+         <EventItem />
       </div>
-
       {/* programs */}
 
       <div id="live_project">

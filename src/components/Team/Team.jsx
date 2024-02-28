@@ -2,7 +2,7 @@
 
 import React from "react";
 import {
-  im1,  im2,im3,im4,im5,  im6,im7,im8,im9,
+  im1,  im2,im3,im4,im5,  im6,im7,im8, 
   akshat,
   sumit, gallery2
 } from "../../assets/image";
@@ -78,21 +78,34 @@ const Team = () => {
            <div className="bg-gray-700 ">
              <h2 className="py-10 text-white   duration-200 text-3xl font-sans text-center ">Germinators</h2>
            </div>
-           <div className="text-center text-black text-xl">Team Elegant Entrepreneur</div>
-          <div className=" flex justify-center "  data-aos="fade-right"
+           <div className="text-center text-black text-xl font-gilroy">Team Elegant Entrepreneur</div>
+          <div className=" flex justify-center items-center "  data-aos="fade-right"
     data-aos-delay="50"
     data-aos-easing="ease-in-out">
             <div className="team-member mt-4 bg-white p-1 rounded-md shadow-md h-auto w-[400px] ">
               <img
-                src={gallery2}
+                src={sumit}
                  
                 alt="Sumit Kataria"
-                className=" object-cover w-full h-80   mb-4 rounded-md  transition-transform transform hover:scale-105"
+                className=" object-contain w-full h-96   mb-4 rounded-md  transition-transform transform hover:scale-105"
               />
               <div className="text-center">
-              <h2 className="text-xl font-bold mb-2">Mr. Sumit Kataria</h2>
-              <p className="text-gray-700"><b>Founder</b></p>
+              <h2 className="text-xl font-bold mb-2 ">Mr. SUMIT KATARIA</h2>
+              {/* <p className="text-gray-700"><b>Founder</b></p> */}
               </div>
+            </div>
+            <div className="flex justify-center items-center w-[40%] text-xl">
+              <div>
+              <p>"Empowering the next generation of entrepreneurs starts with fostering a community of innovation, collaboration, and boundless ambition. With Sumit Kataria at the helm, we're not just building a business, we're nurturing a tribe of elegant entrepreneurs, igniting the spark of creativity and determination in young minds, shaping a future where brilliance knows no bounds."</p>
+                
+              <div className="flex justify-center  pb-6 md:px-6 mt-6">
+              <button className=" bg-gray-800 text-white px-4 py-2 rounded-[20px] shadow-md hover:bg-gray-700 transition-colors duration-300 text-xl font-semibold">
+               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAZ5VE6tWQFfS-b-1pWTKU6mfEqdoFumIyJ4P4I6aZMO4vAA/viewform" className="px-10"> Join </a>
+              </button>
+            </div>
+              </div>
+              
+
             </div>
           </div>
         </div>

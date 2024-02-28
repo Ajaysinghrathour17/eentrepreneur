@@ -92,7 +92,7 @@ export default function Header() {
                   Home
                 </NavLink>
               </li>
-              <li  data-aos="fade-right" data-aos-delay="50"
+              {/* <li  data-aos="fade-right" data-aos-delay="50"
             data-aos-duration="1000">
                 <NavLink
                   to="/about"
@@ -104,20 +104,8 @@ export default function Header() {
                 >
                   About
                 </NavLink>
-              </li>
-              <li  data-aos="fade-right" data-aos-delay="50"
-            data-aos-duration="1000">
-                <NavLink
-                  to="/team"
-                  className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${
-                      isActive ? "text-orange-700" : "text-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
-                  }
-                >
-                  Team
-                </NavLink>
-              </li>
+              </li> */}
+             
               <li  data-aos="fade-right" data-aos-delay="50"
             data-aos-duration="1000">
                 <NavLink
@@ -168,6 +156,19 @@ export default function Header() {
                   }
                 >
                   Events
+                </NavLink>
+              </li>
+              <li  data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
+                <NavLink
+                  to="/team"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "text-gray-700"
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 hover:shadow-2xl transition duration-300 transform hover:scale-101`
+                  }
+                >
+                  Team
                 </NavLink>
               </li>
               <li  data-aos="fade-right" data-aos-delay="50"

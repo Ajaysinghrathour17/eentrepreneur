@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "./Accordian";
 import WhyJoinUs from "./Accordian";
+import { elegantVideo } from "../../assets/image";
 
 const JoinUs = () => {
   return (
@@ -10,11 +11,16 @@ const JoinUs = () => {
           Join Us
         </h2>
       </div>
-     
-      <div className="bg-gray-100 py-12">
+      
+      <div className="bg-gray-200  flex justify-center items-center px-10 py-12">
+      <div className="container mx-auto p-20">
+          <div>
+              <video src={elegantVideo} controls className="h-72 " ></video>
+          </div>
+      </div>
         <div className="container mx-auto">
-          <p className="text-lg mb-8 text-center">
-            Join Elegant Entrepreneur to gain access to valuable knowledge and
+          <p className="text-xl mb-8 text-center">
+            Join Elegant Entrepreneur community to gain access to valuable knowledge and
             guidance for starting a startup.
           </p>
          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAZ5VE6tWQFfS-b-1pWTKU6mfEqdoFumIyJ4P4I6aZMO4vAA/viewform" target="_blank">
@@ -26,7 +32,7 @@ const JoinUs = () => {
             </div>
             <div>
               <button className=" w-full bg-gray-800 text-white px-6 py-3 rounded-md shadow-md hover:bg-gray-700 transition-colors duration-300">
-                Join as College/School Groups
+                Join as College/School/Groups
               </button>
             </div>
           </div>
@@ -37,7 +43,7 @@ const JoinUs = () => {
       <div>
         <WhyJoinUs  />
      </div>
-     <div className="flex justify-center  pb-6 md:px-6">
+          <div className="flex justify-center  pb-6 md:px-6">
               <button className="w-32 bg-gray-800 text-white px-4 py-2 rounded-[20px] shadow-md hover:bg-gray-700 transition-colors duration-300 text-xl font-semibold">
                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAZ5VE6tWQFfS-b-1pWTKU6mfEqdoFumIyJ4P4I6aZMO4vAA/viewform"> Join </a>
               </button>

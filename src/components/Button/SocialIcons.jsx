@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaYoutube, FaFacebook, FaLinkedin } from "react-icons/fa";
+import {FaInstagram, FaYoutube, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const SocialIcons = () => {

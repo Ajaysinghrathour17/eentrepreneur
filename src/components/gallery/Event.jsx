@@ -1,5 +1,6 @@
 import React from "react";
 import Videos from "./Videos";
+import EventItem from "./EventItem";
 
 const Event = () => {
   return (
@@ -10,7 +11,9 @@ const Event = () => {
         </h2>
       </div>
       <div>
-        
+        <div>
+          <EventItem />
+        </div>
         <Videos />
       </div>
     </div>
