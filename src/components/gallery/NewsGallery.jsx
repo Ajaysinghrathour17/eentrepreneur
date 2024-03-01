@@ -15,7 +15,7 @@ const NewsGallery = () => {
     <div className="grid grid-cols-2 m-10 sm:grid-cols-2 md:grid-cols-4  gap-4">
 
 {newsData.map((item) => (
-  <div key={item.id} timeout={500} classNames="scale h-60">
+  <div key={item.id} timeout={500} classNames="scale h-80">
     <div className=" mx-2 " data-aos="fade-up" data-aos-delay="200">
       <a href={item.image} target='_blank' >
       <img src={item.image} alt={item.title} className="w-full h-96 object-contain" />

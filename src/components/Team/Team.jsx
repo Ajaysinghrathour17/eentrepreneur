@@ -2,9 +2,17 @@
 
 import React from "react";
 import {
-  im1,  im2,im3,im4,im5,  im6,im7,im8, 
+  im1,
+  im2,
+  im3,
+  im4,
+  im5,
+  im6,
+  im7,
+  im8,
   akshat,
-  sumit, gallery2
+  sumit,
+  gallery2,
 } from "../../assets/image";
 import TeamPage from "./TeamMember";
 
@@ -66,54 +74,98 @@ const Team = () => {
       about:
         "With a strategic mindset, our team member plays a crucial role in shaping the future of entrepreneurship.",
     },
-    
   ];
 
   return (
     <div className=" ">
       <div className=" ">
-             
-       
-        <div className="team_heads mb-5  " >
-           <div className="bg-gray-700 ">
-             <h2 className="py-10 text-white   duration-200 text-3xl font-sans text-center ">Germinators</h2>
-           </div>
-           <div className="text-center text-black text-xl font-gilroy">Team Elegant Entrepreneur</div>
-          <div className=" flex justify-center items-center "  data-aos="fade-right"
-    data-aos-delay="50"
-    data-aos-easing="ease-in-out">
-            <div className="team-member mt-4 bg-white p-1 rounded-md shadow-md h-auto w-[400px] ">
+        <div className="team_heads mb-5  ">
+          <div className="bg-gray-700 ">
+            {/* <div className=" text-white text-center text-xl font-gilroy">Team Elegant Entrepreneur</div> */}
+
+            <h2 className="py-10 text-white   duration-200 text-3xl font-sans text-center ">
+              Germinators
+            </h2>
+          </div>
+         
+         <div className="bg-gray-100">
+         <div
+            className=" flex justify-center items-center pt-10"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-easing="ease-in-out"
+          >
+           <div className="team-member mt-4 bg-white p-1 rounded-md shadow-md h-auto w-[360px] ">
               <img
                 src={sumit}
-                 
                 alt="Sumit Kataria"
-                className=" object-contain w-full h-96   mb-4 rounded-md  transition-transform transform hover:scale-105"
+                className="  w-full h-96   mb-4 rounded-md  transition-transform transform hover:scale-105"
               />
               <div className="text-center">
-              <h2 className="text-xl font-bold mb-2 ">Mr. SUMIT KATARIA</h2>
-              {/* <p className="text-gray-700"><b>Founder</b></p> */}
+                <h2 className="text-xl font-bold mb-2 ">Mr. SUMIT KATARIA</h2>
               </div>
             </div>
-            <div className="flex justify-center items-center w-[40%] text-xl">
+            <div className="flex justify-center items-center w-[40%] text-xl pl-20">
               <div>
-              <p>"Empowering the next generation of entrepreneurs starts with fostering a community of innovation, collaboration, and boundless ambition. With Sumit Kataria at the helm, we're not just building a business, we're nurturing a tribe of elegant entrepreneurs, igniting the spark of creativity and determination in young minds, shaping a future where brilliance knows no bounds."</p>
-                
-              <div className="flex justify-center  pb-6 md:px-6 mt-6">
-              <button className=" bg-gray-800 text-white px-4 py-2 rounded-[20px] shadow-md hover:bg-gray-700 transition-colors duration-300 text-xl font-semibold">
-               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAZ5VE6tWQFfS-b-1pWTKU6mfEqdoFumIyJ4P4I6aZMO4vAA/viewform" className="px-10"> Join </a>
-              </button>
-            </div>
-              </div>
-              
+                <p>
+                  "Empowering the next generation of entrepreneurs starts with
+                  fostering a community of innovation, collaboration, and
+                  boundless ambition. With Sumit Kataria at the helm, we're not
+                  just building a business, we're nurturing a tribe of elegant
+                  entrepreneurs, igniting the spark of creativity and
+                  determination in young minds, shaping a future where
+                  brilliance knows no bounds."
+                </p>
 
-            </div>
+                <div className="flex justify-center  pb-6 md:px-6 mt-6">
+                  <button className=" bg-gray-800 text-white px-4 py-2 rounded-[20px] shadow-md hover:bg-gray-700 transition-colors duration-300 text-xl font-semibold">
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeAZ5VE6tWQFfS-b-1pWTKU6mfEqdoFumIyJ4P4I6aZMO4vAA/viewform"
+                      className="px-10"
+                    >
+                      
+                      Join
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div> 
+            {/*  */}
           </div>
+                <div className="flex justify-evenly px-20 pt-20">
+                    {/* akshat */}  
+           <div className="relative group mx-2" data-aos="fade-up">
+              <img src={akshat} alt="Sumit Kataria" className="rounded-md w-72 h-80" />
+              <div className="absolute bottom-0 right-0 w-full h-80 bg-black  opacity-0 group-hover:opacity-80 transition duration-300 flex items-end justify-center text-center">
+                <div className="bg-black w-full px-1 pb-4">
+                  <p className="text-white font-bold text-2xl pb-1 uppercase">
+                    Mr Akshat Kothari
+                  </p>
+                  <p className="text-white">Textile Industry and Real Estate Developer</p>
+                </div>
+              </div>
+            </div>
+            {/* sudhi jain */}
+            <div className="relative group mx-2" data-aos="fade-up">
+              <img src={im3} alt="Sumit Kataria" className="rounded-md w-72 h-80" />
+              <div className="absolute bottom-0 right-0 w-full h-80 bg-black  opacity-0 group-hover:opacity-80 transition duration-300 flex items-end justify-center text-center">
+                <div className="bg-black w-full px-1 pb-4">
+                  <p className="text-white font-bold text-2xl pb-1 uppercase">
+                    Mr Sudhir Jain
+                  </p>
+                  {/* <p className="text-white">{about}</p> */}
+                </div>
+              </div>
+            </div>
+                </div>
+         </div>
+            
         </div>
 
         {/* cultivators */}
         <div className="bg-gray-700 text-white font-bold text-2xl   uppercase h-20 flex justify-center items-center ">
-             <div>Cultivators</div>
-           </div>
+          <div>Cultivators</div>
+        </div>
         {/*  */}
       </div>
 

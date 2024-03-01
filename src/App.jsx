@@ -21,23 +21,26 @@ import JoinUs from "./components/JoinUs/JoinUs.jsx";
 // ..AOS for animation on scroll
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import MitroBands from "./components/Projects/MitroBands.jsx";
+import ElectricVehicle from "./components/Projects/ElectricVehicle.jsx";
+import ElegantInnovations from "./components/Projects/ElegantInnovations.jsx";
 AOS.init();
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />} >
+    <Route path="" element={<Layout />} >
       <Route path="" Component={Home} />
       <Route path="about" Component={AboutPage} />
-      <Route path="team" element={<Team />} />
+      <Route path="team" element={<Team />}     />
       <Route path="join-us" element={<JoinUs />} />
       <Route path="reports" element={<Reports />} />
       <Route path="contact" element={<Contact />} />
       <Route path="gallery" element={<Gallery />} />
       <Route path="events" element={<Event />} />
       <Route path="media" element={<Media />} />
-
-
-
+      <Route path="projects/electric-vehicle" element={<ElectricVehicle />} />
+      <Route path="projects/mitro-bands" element={<MitroBands />} />
+      <Route path="projects/elegant-innovations" element={<ElegantInnovations />} />
     </Route>
   )
 );

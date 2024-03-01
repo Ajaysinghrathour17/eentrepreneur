@@ -37,7 +37,7 @@ import {
 const TeamMember = ({ name, imgSrc, about }) => {
   return (
     <div className="relative group" data-aos="fade-up">
-      <img src={imgSrc} alt={name} className="rounded-md w-56 h-60" />
+      <img src={imgSrc} alt={name} className="rounded-md w-52 h-60" />
       <div className="absolute bottom-0 right-0 w-full h-60 bg-black  opacity-0 group-hover:opacity-80 transition duration-300 flex items-end justify-center text-center">
         <div className="bg-black w-full px-1 pb-4">
           <p className="text-white font-bold text-2xl pb-1 uppercase">{name}</p>
@@ -50,8 +50,6 @@ const TeamMember = ({ name, imgSrc, about }) => {
 
 export default function TeamPage() {
   const teamMembers = [
-    { name: "AKSHAT KOTHARI", image: akshat, about: "Texttile Industry & Real Estate developer" },
-
     {
       image: im1,
       name: "SULABH BAFNA",
@@ -64,11 +62,7 @@ export default function TeamPage() {
       name: "ANKITA KATARIA",
       about: "",
     },
-    {
-      image: im3,
-      name: "SUDHIR JAIN",
-      about: "",
-    },
+
     { name: "Ayush Jain", image: ayushjain, about: "Jain Jewellers" },
 
     {
