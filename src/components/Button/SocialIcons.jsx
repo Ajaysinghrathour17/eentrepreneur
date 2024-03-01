@@ -33,7 +33,7 @@ const SocialIcons = () => {
       </a>
       {/* Instagram */}
       <a
-        href="https://www.instagram.com/_elegant_entrepreneur_/"
+        href="https://www.instagram.com/elegantentreprenuer_/"
         target="_blank"
         rel="noopener noreferrer"
       >

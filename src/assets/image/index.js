@@ -72,11 +72,16 @@ import media2 from "./media2.jpg";
 import project1 from "./electric_project.mp4";
 import electric from "./projects/electric.gif";
 import digital from "./projects/digital.png";
+import digitalin from "./projects/digitalin.png";
+
 import mitroband from "./projects/mitroband.png";
+import mitrobandImg from "./projects/mitroband1.jpg";
+
 
 export {
   logo,
   elegantVideo,
+  digitalin,
   asset1,
   asset2,
   asset3,
@@ -119,6 +124,7 @@ export {
   electric,
   digital,
   mitroband,
+  mitrobandImg,
   aditya,
   anjali,
   anshu,

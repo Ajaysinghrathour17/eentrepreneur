@@ -1,6 +1,8 @@
 // Team.js
 
 import React from "react";
+import {FaInstagram, FaYoutube, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import {
   im1,
   im2,
@@ -90,7 +92,7 @@ const Team = () => {
          
          <div className="bg-gray-100">
          <div
-            className=" flex justify-center items-center pt-10"
+            className=" md:flex justify-center items-center pt-10"
             data-aos="fade-right"
             data-aos-delay="50"
             data-aos-easing="ease-in-out"
@@ -99,13 +101,76 @@ const Team = () => {
               <img
                 src={sumit}
                 alt="Sumit Kataria"
-                className="  w-full h-96   mb-4 rounded-md  transition-transform transform hover:scale-105"
+                className="  w-full h-96   mb-4 rounded-md  transition-transform transform"
               />
               <div className="text-center">
-                <h2 className="text-xl font-bold mb-2 ">Mr. SUMIT KATARIA</h2>
+                <h2 className="text-xl font-bold  ">Mr. SUMIT KATARIA</h2>
+                <p className="font-medium">Finance Professional and Entrepreneur</p>
+                <div className="flex justify-center space-x-4  py-2">
+      {/* Facebook */}
+      <a
+        href="https://www.facebook.com/sumit.kataria.5682"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaFacebook className="text-gray-600 hover:text-blue-800 w-6 h-6" />
+      </a>
+
+      {/* LinkedIn */}
+      
+      {/* YouTube */}
+      {/* <a
+        href="https://www.youtube.com/@ElegantEntrepreneur/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaYoutube className="text-gray-600 hover:text-red-800 w-6 h-6" />
+      </a> */}
+      {/* Instagram */}
+      <a
+        href="https://www.instagram.com/mr.sumit.kataria/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaInstagram className="text-gray-600 hover:text-pink-700 w-6 h-6 " />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/elegant-entrepreneurs-7799a92b1/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLinkedin className="text-gray-600 hover:text-blue-700 w-6 h-6" />
+      </a>
+
+      {/* Twitter */}
+      {/* <a href="#"  rel="noopener noreferrer">
+        <FaXTwitter className="text-gray-600 hover:text-blue-600 w-6 h-6" />
+      </a> */}
+    </div>
               </div>
             </div>
-            <div className="flex justify-center items-center w-[40%] text-xl pl-20">
+
+            <div className=" w-[60%] text-md pl-20">
+                <div>
+            <p>
+             A Finance Professional and Entrepreneur, combines a robust finance
+background with a fervent entrepreneurial spirit to drive innovation and growth in the
+business world. With expertise in financial analysis, investment management, and
+strategic planning, Sumit has successfully launched and managed ventures across diverse
+segments. As Finance Manager at Kataria Group, he leads financial analysis, develops
+strategic investment plans, and manages client portfolios. Additionally, as Sumit
+spearheads product development initiatives, oversees business operations, and fosters
+strategic partnerships. Sumit holds an MBA in Finance from Manipal University Sikkim and
+a B.Com in Accounting and schooling from Daly College . Recognized for exceptional
+portfolio management skills, he secured funding for Innovate Solutions from various
+venture capital firms and he also invested in approx 11 different innovative project include
+of electronic vehicle technology and Sumit was awarded in finance and marketing by
+the various dignitaries of financial field in both national and international countries for
+outstanding contributions to the business community. Beyond work, Sumit stays updated
+on finance and sports, mentors aspiring Entrepreneurs, and volunteers for community
+development project
+            </p>
+            </div> <br />
               <div>
                 <p>
                   "Empowering the next generation of entrepreneurs starts with
@@ -132,6 +197,7 @@ const Team = () => {
             </div> 
             {/*  */}
           </div>
+
                 <div className="flex justify-evenly px-20 pt-20">
                     {/* akshat */}  
            <div className="relative group mx-2" data-aos="fade-up">

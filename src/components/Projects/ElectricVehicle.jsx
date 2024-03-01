@@ -1,14 +1,21 @@
 import React from 'react';
+import { project1 } from '../../assets/image';
 
 const ElectricVehicle = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold mb-4">Electric Vehicle Converter Startup</h2>
-      <div className="bg-gray-100 rounded-lg p-4">
-        <img src="electric_vehicle.jpg" alt="Electric Vehicle Converter Startup" className="w-full h-auto rounded-lg mb-4" />
+      <div className="bg-gray-100 rounded-lg p-4 ">
+         <div className='flex justify-center pb-5'>
+         <video src= {project1} alt="Electric Vehicle Converter " className=" h-[500px] rounded-lg mb-4"  controls/>
+
+         </div>
+         
         <p className="text-gray-700 mb-4">We at Electric Vehicle Converter Startup are passionate about transforming traditional vehicles into eco-friendly marvels. With our cutting-edge technology and expertise, we convert gas-guzzling vehicles into efficient electric machines. Our mission is to contribute to a cleaner environment and promote sustainable transportation solutions for the future.</p>
+
         
-        <h3 className="text-xl font-bold mb-2">Our Services:</h3>
+        
+        <h3 className="text-xl font-bold mb-2">Services:</h3>
         <ul className="list-disc pl-5 mb-4">
           <li>Custom electric vehicle conversion</li>
           <li>Battery upgrade and maintenance</li>
